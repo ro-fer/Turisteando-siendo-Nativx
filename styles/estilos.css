@@ -1,0 +1,151 @@
+.carrucel {
+    overflow-x: scroll;
+    overflow-y: scroll;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px 0px 40px 0px;
+}
+.provincia {
+    border-radius: 25px;
+    width: 170px;
+    min-width: 170px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.foto {
+    border-radius: 5%;
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+}
+.Titulo {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+.box {
+    border: 1px solid black;
+    height: 20vw;
+    
+  }
+.box-2 {
+    border: 1px solid black;
+    height: 15vw;
+    width: 13vw;
+    max-width: 150px;
+    max-height: 150px;
+  }
+.box-provincias{
+    border: 1px solid black;
+    height: 30vw;
+    width: 30vw;
+    
+  }
+.seccionRegistrarse{
+    width: 100%;
+    margin-top:5%;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    font-size:1.2rem;
+    .tituloRegistrarse{
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    /*seleccionar todos los input menos el checkbox*/
+    form{
+        width: 90%;
+        padding:100px;
+        input:not(.check,.boton),select{
+            width: 100%;
+            margin-bottom: 10px;
+            height: 40px;
+            padding: 0px 20px;
+            font-size: 1.2rem;
+            border-radius: 20px;
+            border: 2px solid #9f3647;
+            background-color: #333333;
+            outline: none;
+            color:rgb(255, 255, 255);
+        }
+        .error input:not(.check,.boton),.error select{
+            border: 1px solid #ff0000;
+        }
+        .error-text{
+            color: #ff0000;
+            font-size: 0.8rem;
+            margin-top:0px;
+            margin-bottom: 10px;
+        }
+
+        .boton{
+            width: 90%;
+            box-sizing: content-box;
+            background-color:#5b3e04;
+            border: 2px solid #5b3e04;
+            color: #ffffff;
+            padding: 1rem 1rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 500;
+           
+        }
+        .ayuda{
+            margin-top:40px;
+            font-size: 1rem;
+            text-decoration: none;
+            color: #787878;
+            font-weight:400;
+           
+        }
+    }
+}
+.contenedor-provincia {
+    height: 400px;
+    width: 400px;
+    position: relative;
+  }
+.imagen-provincia {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+ .texto-provincia{
+    z-index: 100;
+    position: absolute;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    left: 3vw;
+    top: 5%;
+  }
+  .barra{
+    position: relative;
+    z-index: 100000;
+}
+a {
+outline: none;
+text-decoration: none;
+padding: 2px 1px 0;
+}
+a:focus {
+border-bottom: 1px solid;
+background: #c59fdf;
+}
+
+
+
